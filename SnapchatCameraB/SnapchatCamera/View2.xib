@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View2" customModule="SnapchatCamera" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="BFv-jj-PTj" id="Kks-jO-8tK"/>
+                <outlet property="tempImageView" destination="q06-CJ-SOF" id="ATh-ZH-0Z5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFv-jj-PTj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q06-CJ-SOF">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.33818916509733155" blue="0.3129381846844097" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="q06-CJ-SOF" secondAttribute="centerY" id="7bb-5k-KL3"/>
+                <constraint firstAttribute="bottom" secondItem="q06-CJ-SOF" secondAttribute="bottom" id="8Kz-gO-c8z"/>
+                <constraint firstAttribute="centerY" secondItem="BFv-jj-PTj" secondAttribute="centerY" id="BGS-Lm-hDd"/>
+                <constraint firstItem="BFv-jj-PTj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CAE-Ix-255"/>
+                <constraint firstItem="q06-CJ-SOF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ht1-Ib-NBg"/>
+                <constraint firstItem="q06-CJ-SOF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TKf-sa-aJk"/>
+                <constraint firstAttribute="trailing" secondItem="q06-CJ-SOF" secondAttribute="trailing" id="VaH-r7-sj3"/>
+                <constraint firstItem="BFv-jj-PTj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XQy-OO-zFI"/>
+                <constraint firstAttribute="bottom" secondItem="BFv-jj-PTj" secondAttribute="bottom" id="Zws-y0-jPD"/>
+                <constraint firstAttribute="centerX" secondItem="BFv-jj-PTj" secondAttribute="centerX" id="iTy-MC-ehG"/>
+                <constraint firstAttribute="trailing" secondItem="BFv-jj-PTj" secondAttribute="trailing" id="ixG-KO-QBV"/>
+                <constraint firstAttribute="centerX" secondItem="q06-CJ-SOF" secondAttribute="centerX" id="jvs-Nr-fHP"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
